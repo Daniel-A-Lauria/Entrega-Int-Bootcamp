@@ -17,4 +17,5 @@ jobs:
         run: npx playwright install --with-deps
         
       - name: Rodar Testes
-        run: npm test
+        run: npx http-server . -p 8080 & 
+             npx playwright test
