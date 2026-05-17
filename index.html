@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Calendário Dinâmico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <header>
+            <h1 id="month-year">Maio 2026</h1>
+            <select id="year-select"></select>
+        </header>
+        
+        <div class="calendar-grid" id="calendar-grid">
+            <!-- Os dias serão gerados pelo JavaScript -->
+        </div>
+
+        <div class="holidays-list">
+            <h3>Feriados no Mês</h3>
+            <ul id="holiday-list-items"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
