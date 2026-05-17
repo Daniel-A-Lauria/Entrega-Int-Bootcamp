@@ -2,18 +2,20 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Meu Calendário Dinâmico</title>
+    <title>Calendário Maneiro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="calendar-container">
         <header>
-            <h1 id="month-year">Maio 2026</h1>
+        <div class="controls">
+            <select id="month-select"></select>
             <select id="year-select"></select>
+        </div>
+        <h1 id="calendar-title"></h1>
         </header>
-        
+
         <div class="calendar-grid" id="calendar-grid">
-            <!-- Os dias serão gerados pelo JavaScript -->
         </div>
 
         <div class="holidays-list">

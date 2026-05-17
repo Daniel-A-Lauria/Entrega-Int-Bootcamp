@@ -1,0 +1,10 @@
+meu-calendario/
+├── .github/
+│   └── workflows/
+│       └── main.yml        
+├── tests/
+│   └── api.spec.js         
+├── index.html
+├── style.css
+├── script.js
+└── package.json
