@@ -1,10 +1,20 @@
-meu-calendario/
-├── .github/
-│   └── workflows/
-│       └── main.yml        
-├── tests/
-│   └── api.spec.js         
-├── index.html
-├── style.css
-├── script.js
-└── package.json
+name: Testes de Integração
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          
+      - name: Instalar dependências
+        run: npm install
+        
+      - name: Instalar Navegadores do Playwright
+        run: npx playwright install --with-deps
+        
+      - name: Rodar Testes
+        run: npm test
